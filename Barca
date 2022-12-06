@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class Barca {
+
+    public static void main(String[] args) {
+
+                Scanner Leer = new Scanner(System.in);
+                int opcion;
+                
+                do{
+                        System.out.println("1.Capercita");
+                        System.out.println("2.lobo");
+                        System.out.println("3.uvas");
+                        System.out.println("4.el barco se desplaza");
+                        System.out.println("4.fin");
+                        opcion = Leer.nextInt();
+
+                } while (opcion < 1 || opcion > 4);
+                switch(opcion){
+
+                        case 1:
+                            System.out.println("Capercita se sube al barco junto al observador");
+                            break;
+                        
+                        case 2:
+                            System.out.println("lobo se sube al barco junto al observador");
+                            break;
+
+                        case 3:
+                            System.out.println("uvas se sube al barco junto al observador");
+                            break;
+
+                        case 4:
+                            System.out.println("El barco cruza el rio");                          
+                             break;
+
+                        case 5:
+                            System.exit(0);
+                            break;
+
+
+
+                    
+                }
+        
+    }
+}
